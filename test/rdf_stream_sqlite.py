@@ -22,19 +22,19 @@ class StreamSink(Sink):
         # print "Stream of triples s={s}, p={p}, o={o}".format(s=s, p=p, o=o).encode('utf8')
         try:
             c.execute("INSERT INTO entities (entity) VALUES (?)", [(s)])
-            s_id = c.last_insert_rowid()
+            s_id = conn.last_insert_rowid()
         except sqlite3.IntegrityError:
             c.execute("SELECT id FROM entities WHERE entity = ?", [(s)])
             s_id = c.fetchone()[0]
         try:    
             c.execute("INSERT INTO properties (property) VALUES (?)", [(p)])
-            p_id = c.last_insert_rowid()
+            p_id = conn.last_insert_rowid()
         except sqlite3.IntegrityError:
             c.execute("SELECT id FROM properties WHERE property = ?", [(p)])
             p_id = c.fetchone()[0]
         try:
             c.execute("INSERT INTO entities (entity) VALUES (?)", [(o)])
-            o_id = c.last_insert_rowid()
+            o_id = conn.last_insert_rowid()
         except sqlite3.IntegrityError:
             c.execute("SELECT id FROM entities WHERE entity = ?", [(o)])
             o_id = c.fetchone()[0]

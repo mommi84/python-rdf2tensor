@@ -33,7 +33,10 @@ f = open("test.ttl", 'rb')
 g.parse(f)
 f.close()
 conn.commit()
-c.execute("SELECT id FROM properties WHERE property = ?", [("http://live.dbpedia.org/ontology/wikiPageLength")])
+c.execute("SELECT count(*) FROM properties")
+data = c.fetchone()[0]
+print(data)
+c.execute("SELECT count(*) FROM entities")
 data = c.fetchone()[0]
 print(data)
 conn.close()

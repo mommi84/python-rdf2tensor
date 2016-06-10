@@ -1,0 +1,57 @@
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.wikidata.org/entity/Q215627> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://xmlns.com/foaf/0.1/isPrimaryTopicOf>	<http://en.wikipedia.org/wiki/Harald_Duschek> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/name>	"Harald Duschek"@en .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/ontology/wikiPageID>	"46546351"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/ontology/wikiPageEditLink>	<http://en.wikipedia.org/w/index.php?title=Harald_Duschek&action=edit> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/shortDescription>	"East German ski jumper"@en .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/ontology/birthPlace>	<http://live.dbpedia.org/resource/East_Germany> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/ontology/birthPlace>	<http://live.dbpedia.org/resource/Thale> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://live.dbpedia.org/ontology/Person> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/ontology/birthDate>	"1956-05-05+02:00"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://xmlns.com/foaf/0.1/givenName>	"Harald"@en .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/ontology/wikiPageLength>	"1053"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.wikidata.org/entity/Q5> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/dateOfBirth>	"1956-05-05+01:00"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/wikiPageUsesTemplate>	<http://live.dbpedia.org/resource/Template:Persondata> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/birthDate>	"1956-05-05+01:00"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/birthPlace>	<http://live.dbpedia.org/resource/Thale> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/wikiPageUsesTemplate>	<http://live.dbpedia.org/resource/Template:Infobox_ski_jumper> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://live.dbpedia.org/ontology/Agent> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://purl.org/dc/terms/subject>	<http://live.dbpedia.org/resource/Category:1956_births> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/id>	"14817"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/placeOfBirth>	<http://live.dbpedia.org/resource/Thale> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/wikiPageUsesTemplate>	<http://live.dbpedia.org/resource/Template:Reflist> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/ontology/birthYear>	"1956+02:00"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/seasons>	"1980"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://purl.org/dc/elements/1.1/description>	"East German ski jumper"@en .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Thing> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://www.w3.org/2000/01/rdf-schema#label>	"Harald Duschek"@en .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/ontology/wikiPageExtracted>	"2015-08-30T10:27:35Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://schema.org/Person> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://xmlns.com/foaf/0.1/Person> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/fullname>	"Harald Duschek"@en .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://purl.org/dc/elements/1.1/description>	"East German ski jumper"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/wikiPageUsesTemplate>	<http://live.dbpedia.org/resource/Template:BLP_unsourced> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/s>	"JP"@en .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/ontology/birthYear>	"1956+01:00"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/ontology/birthDate>	"1956-05-05+01:00"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/dateOfBirth>	"1956-05-05+02:00"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/ontology/wikiPageModified>	"2015-05-24T20:02:50Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/placeOfBirth>	<http://live.dbpedia.org/resource/East_Germany> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/wikiPageUsesTemplate>	<http://live.dbpedia.org/resource/Template:Germany-sport-bio-stub> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://xmlns.com/foaf/0.1/name>	"Duschek, Harald"@en .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://purl.org/dc/terms/subject>	<http://live.dbpedia.org/resource/Category:German_ski_jumpers> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/birthPlace>	<http://live.dbpedia.org/resource/East_Germany> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/birthDate>	"1956-05-05+02:00"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/ontology/wikiPageOutDegree>	"11"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/wikiPageUsesTemplate>	<http://live.dbpedia.org/resource/Template:FIS> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/ontology/wikiPageHistoryLink>	<http://en.wikipedia.org/w/index.php?title=Harald_Duschek&action=history> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/ontology/wikiPageRevisionLink>	<http://en.wikipedia.org/w/index.php?title=Harald_Duschek&oldid=663846905> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://xmlns.com/foaf/0.1/name>	"Harald Duschek"@en .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/name>	"Duschek, Harald"@en .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/ontology/wikiPageRevisionID>	"663846905"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://purl.org/dc/terms/subject>	<http://live.dbpedia.org/resource/Category:Living_people> .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://xmlns.com/foaf/0.1/surname>	"Duschek"@en .
+<http://live.dbpedia.org/resource/Harald_Duschek>	<http://live.dbpedia.org/property/updated>	"30"^^<http://www.w3.org/2001/XMLSchema#integer> .

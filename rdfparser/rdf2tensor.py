@@ -19,6 +19,10 @@ class TensorSink(Sink):
 			c.execute("INSERT INTO entities (entity) VALUES (?)", [(s)])
 		except sqlite3.IntegrityError:
 			pass
+		try:
+			c.execute("INSERT INTO entities (entity) VALUES (?)", [(o)])
+		except sqlite3.IntegrityError:
+			pass
 		try:    
 			p_id = props[p][0]
 		except KeyError:
@@ -26,12 +30,6 @@ class TensorSink(Sink):
 			props[p][1].write("%%MatrixMarket matrix coordinate integer general\n%\nnum_ents num_ents num_nonZeros\n")
 			p_id = i
 			i += 1
-
-		try:
-			c.execute("INSERT INTO entities (entity) VALUES (?)", [(o)])
-		except sqlite3.IntegrityError:
-			pass
-
 		c.execute("SELECT id FROM entities WHERE entity = ?", [(s)])
 		s_id = c.fetchone()[0]
 		c.execute("SELECT id FROM entities WHERE entity = ?", [(o)])
@@ -47,21 +45,21 @@ f.close()
 conn.commit()
 c.execute("SELECT count(*) FROM entities")
 num_ents = c.fetchone()[0]
-print(num_ents)
-#close all writers
-for key in props:	
 
-	props[key][1].close()
+#close all writers and the database connection
+for key, value in props.items():	
+	value[1].close()
 conn.close()
 
 #create .mtx for all properties with proper head fields
-for key in props:
-	with open("matrices/" + str(props[key][0]), "r") as f:
+for key, value in props.items():
+	id_p = str(value[0])
+	with open("matrices/" + id_p, "r") as f:
 		num_nonZeros = sum([1 for line in f]) - 3
-	with open("matrices/" + str(props[key][0]), "r") as f, open("matrices/" + str(props[key][0]) + ".mtx", "w+") as g:
+	with open("matrices/" + id_p, "r") as f, open("matrices/" + id_p + ".mtx", "w+") as g:
 		for line in f:
 			g.write(line.replace("num_ents num_ents num_nonZeros", "{} {} {}".format(num_ents, num_ents, num_nonZeros)))
-	os.remove("matrices/" + str(props[key][0]))	
+	os.remove("matrices/" + id_p)	
 
 
 

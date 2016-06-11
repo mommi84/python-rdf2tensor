@@ -1,5 +1,6 @@
 from rdflib.plugins.parsers.ntriples import NTriplesParser, Sink
 import sqlite3
+import os
 
 # prepare DB
 conn = sqlite3.connect(':memory:')
@@ -21,7 +22,7 @@ class TensorSink(Sink):
 		try:    
 			p_id = props[p][0]
 		except KeyError:
-			props[p] = (i, open("matrices/" + str(i) + ".mtx", "w+"))
+			props[p] = (i, open("matrices/" + str(i), "w+"))
 			props[p][1].write("%%MatrixMarket matrix coordinate integer general\n%\nnum_ents num_ents num_nonZeros\n")
 			p_id = i
 			i += 1
@@ -44,14 +45,23 @@ f = open("test.ttl", 'rb')
 g.parse(f)
 f.close()
 conn.commit()
-size_props = len(props)
-print(size_props)
 c.execute("SELECT count(*) FROM entities")
-size_ents = c.fetchone()[0]
-print(size_ents)
+num_ents = c.fetchone()[0]
+print(num_ents)
 #close all writers
-for key in props:
-	props[key][1].close()
+for key in props:	
 
+	props[key][1].close()
 conn.close()
-		
+
+#create .mtx for all properties with proper head fields
+for key in props:
+	with open("matrices/" + str(props[key][0]), "r") as f:
+		num_nonZeros = sum([1 for line in f]) - 3
+	with open("matrices/" + str(props[key][0]), "r") as f, open("matrices/" + str(props[key][0]) + ".mtx", "w+") as g:
+		for line in f:
+			g.write(line.replace("num_ents num_ents num_nonZeros", "{} {} {}".format(num_ents, num_ents, num_nonZeros)))
+	os.remove("matrices/" + str(props[key][0]))	
+
+
+
